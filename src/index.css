@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background-color: #171115;
+    color: #fff;
+    overflow: hidden;
+}
+body::before,
+body::after {
+    content: '';
+    position: absolute;
+    width: 240px;
+    height: auto;
+    background-color: #650859;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    filter: blur(50px);
+    z-index: -1;
+}
+body::before {
+    top: -5rem;
+    left: -5rem;
+}
+body::after {
+    bottom: -5rem;
+    right: -5rem;
+}
